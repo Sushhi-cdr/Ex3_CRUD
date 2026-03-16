@@ -25,7 +25,7 @@ public class ServicoPedido {
         return repositorio.findById(id).orElse(null);
     }
 
-    public void excluir(Pedido pedido){
-        repositorio.deleteById(pedido.getId());
+    public void excluir(Long id){
+        repositorio.deleteById(id);
     }
 }
