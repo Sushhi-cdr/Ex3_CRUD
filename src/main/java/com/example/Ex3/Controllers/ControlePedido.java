@@ -24,7 +24,7 @@ public class ControlePedido {
         return servico.listar();
     }
 
-    @GetMapping
+    @GetMapping("/{id}")
     public Pedido buscar(@PathVariable Long id){
         return servico.buscarPorID(id);
     }
